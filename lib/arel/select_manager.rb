@@ -9,7 +9,12 @@ module Arel
       from table
     end
 
-    def taken
+    def initialize_copy other
+      super
+      @ctx = @ast.cores.last
+    end
+
+    def taken 
       @ast.limit && @ast.limit.expr
     end
 
