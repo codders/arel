@@ -3,6 +3,7 @@ module Arel
     class Attribute < Struct.new :relation, :name, :column
       include Arel::Expressions
       include Arel::Predications
+      include Arel::OrderPredications
     end
 
     class String    < Attribute; end

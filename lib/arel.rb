@@ -2,6 +2,7 @@ require 'arel/crud'
 
 require 'arel/expressions'
 require 'arel/predications'
+require 'arel/order_predications'
 require 'arel/table'
 require 'arel/attributes'
 require 'arel/compatibility/wheres'
