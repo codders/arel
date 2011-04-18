@@ -84,6 +84,7 @@ module Arel
       alias :visit_Arel_Nodes_On                :unary
       alias :visit_Arel_Nodes_Top               :unary
       alias :visit_Arel_Nodes_UnqualifiedColumn :unary
+      alias :visit_Arel_Nodes_Placeholder       :unary
 
       def visit_Arel_Nodes_InsertStatement o
         visit_edge o, "relation"

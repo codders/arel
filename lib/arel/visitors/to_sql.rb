@@ -279,6 +279,10 @@ module Arel
         "#{quote_column_name o.name}"
       end
 
+      def visit_Arel_Nodes_Placeholder o
+        visit o.resolve
+      end
+
       def visit_Arel_Attributes_Attribute o
         @last_column = o.column
         join_name = o.relation.table_alias || o.relation.name

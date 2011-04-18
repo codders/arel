@@ -24,6 +24,7 @@ module Arel
       alias :visit_Arel_Nodes_On                :unary
       alias :visit_Arel_Nodes_Top               :unary
       alias :visit_Arel_Nodes_UnqualifiedColumn :unary
+      alias :visit_Arel_Nodes_Placeholder       :unary
 
       def function o
         visit o.expressions

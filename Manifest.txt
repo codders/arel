@@ -55,6 +55,7 @@ lib/arel/nodes/on.rb
 lib/arel/nodes/or.rb
 lib/arel/nodes/ordering.rb
 lib/arel/nodes/outer_join.rb
+lib/arel/nodes/placeholder.rb
 lib/arel/nodes/select_core.rb
 lib/arel/nodes/select_statement.rb
 lib/arel/nodes/sql_literal.rb
